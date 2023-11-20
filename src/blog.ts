@@ -20,3 +20,12 @@ const blogData: Blog[] = [
     },
 ];
 
+const blogElement = document.createElement('div') 
+
+
+const blogHtml = blogElement.innerHTML = 'Hello World'
+
+const parentEl = document.getElementById('blog-entry')
+
+parentEl.appendChild(blogElement)
+
