@@ -20,12 +20,14 @@ const blogData: Blog[] = [
     },
 ];
 
-const blogElement = document.createElement('div') 
+const blogElement = document.createElement('div');
+
+blogElement.className = 'blog-item';
+blogElement.innerHTML = '<p>${blog.description}</p>';
 
 
-const blogHtml = blogElement.innerHTML = 'Hello World'
 
-const parentEl = document.getElementById('blog-entry')
+const blogContainer = document.getElementById('blog-container');
 
-parentEl.appendChild(blogElement)
+blogContainer?.appendChild(blogElement);
 
