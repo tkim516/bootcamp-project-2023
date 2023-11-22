@@ -1,11 +1,4 @@
-type Blog = {
-    title: string;
-    date: Date;
-    description: string;
-    slug: string;
-};
-
-const blogs: Blog[] = [
+var blogs = [
     {
         title: "First Blog Entry",
         date: new Date("2023-11-20"),
@@ -22,29 +15,22 @@ const blogs: Blog[] = [
 // create function that loops through blogData
 // should take in blog title, date, description, slug and apply them to the blogElement
 // use slug to create a new html file for each blog post
-
-document.addEventListener('DOMContentLoaded', () => {
-    const blogContainer = document.getElementById('blog-container');
-
+document.addEventListener('DOMContentLoaded', function () {
+    var blogContainer = document.getElementById('blog-container');
     if (blogContainer) {
-        blogs.forEach((blog) => {
-            const blogEntry = document.createElement('div');
+        blogs.forEach(function (blog) {
+            var blogEntry = document.createElement('div');
             blogEntry.className = 'blog-entry';
-
-            const titleElement = document.createElement('h2');
+            var titleElement = document.createElement('h2');
             titleElement.textContent = blog.title;
-
-            const dateElement = document.createElement('p');
+            var dateElement = document.createElement('p');
             dateElement.textContent = 'Date: ${blog.date}';
-
-            const descriptionElement = document.createElement('p');
-            descriptionElement.textContent = blog.description
-
+            var descriptionElement = document.createElement('p');
+            descriptionElement.textContent = blog.description;
             blogEntry.appendChild(titleElement);
             blogEntry.appendChild(dateElement);
             blogEntry.appendChild(descriptionElement);
             blogContainer.appendChild(blogEntry);
-
         });
     }
 });
