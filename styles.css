@@ -58,10 +58,12 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     width: 66.666%; /* 2/3 of the page */
     height: 100%;
     overflow: hidden;
-    display: flex;
+    margin-bottom: 0%;
+    display: block;
 }
 
 .background-image::before {
@@ -71,13 +73,18 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    height: 100%;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), 
         url('morro-bay-wallpaper.jpeg'); /* Replace with the path to your image */;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     overflow: hidden;
-    display: flex;
+    margin-bottom: 0%;
+    display: block;
+
+
+
 }
 
 .about-image {
@@ -85,9 +92,8 @@ body {
     height: 250px; /* Set your desired height */
     border-radius: 50%; /* Create a circular outline */
     border: 5px solid white; /* Set the border color to match the background */
-    margin-left: 176.999px;
+    margin-left: 11.7%;
     margin-top: 50px;
-    left: 0;
     overflow: visible;  
     display: flex;
 }
@@ -103,11 +109,11 @@ body {
 
 .about-text {
     width: 33.333%;
-    height: 50%;
-    position: absolute;
+    height: 100%;
     bottom: 0;
+    position: relative;
     left: 0;
-    margin-left: 50px;
+    margin-left: 3.3%;
     text-align: center;
     overflow: visible;
 }
@@ -155,7 +161,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
-
 .resume-entry-title {
     display: flex;
     font-size: 16px;
@@ -186,9 +191,9 @@ body {
     align-items: center;
     background-color: black;
     color: white;
-    position: absolute;
     overflow: hidden;
     bottom: 0;
+    position: sticky;
     width: 100%;
     height: 6%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

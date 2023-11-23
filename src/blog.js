@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             descriptionElement.textContent = blog.description;
             var imgElement = document.createElement("img");
             imgElement.src = blog.image;
-            imgElement.width = 300; // Set the width of the image
+            imgElement.width = 200; // Set the width of the image
             imgElement.height = 200; // Set the height of the image
             // defining HTML classes for each element
             titleElement.classList.add('blog-title');
