@@ -1,6 +1,6 @@
 # Developer Bootcamp 2023
 
-Visit my website here => https://tkim516/bootcamp-project-2023.io
+Visit my website here => https://tkim516/tkim-bootcamp-project.io
 
 This is how we will be tracking your milestones throughout bootcamp! By the end of bootcamp, you will have a fullstack personal portfolio website.
 
