@@ -51,6 +51,11 @@ body {
     color: green;
 }
 
+.background-image-container {
+    height: 100%;
+    width: 66.666%;
+}
+
 .background-image {
     background-size: cover;
     background-position: top center;
@@ -85,6 +90,11 @@ body {
 
 
 
+}
+
+.about-section-container {
+    height: 100%;
+    width: 33.333%;
 }
 
 .about-image {
