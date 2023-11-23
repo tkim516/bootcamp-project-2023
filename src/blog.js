@@ -1,15 +1,24 @@
 var blogs = [
     {
         title: "First Blog Entry",
-        date: new Date("2023-11-20"),
-        description: "Learning how to use Typescript",
+        date: 'November 2023',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         slug: "./blog/blog-entry-1.html",
+        image: 'steve-jobs-walter-isaacson.jpeg',
     },
     {
         title: "Second Blog Entry",
-        date: new Date("2023-11-20"),
-        description: "Blog entry number 2",
+        date: 'November 2023',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         slug: "./blog/blog-entry-2.html",
+        image: '/Users/tyler/Downloads/bootcamp-project-2023/steve-jobs-walter-isaacson.jpeg',
+    },
+    {
+        title: "Third Blog Entry",
+        date: 'November 2023',
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        slug: "./blog/blog-entry-3.html",
+        image: 'steve-jobs-walter-isaacson.jpeg',
     },
 ];
 // create function that loops through blogData
@@ -24,12 +33,22 @@ document.addEventListener('DOMContentLoaded', function () {
             var titleElement = document.createElement('h2');
             titleElement.textContent = blog.title;
             var dateElement = document.createElement('p');
-            dateElement.textContent = 'Date: ${blog.date}';
+            dateElement.textContent = blog.date;
             var descriptionElement = document.createElement('p');
             descriptionElement.textContent = blog.description;
+            var imgElement = document.createElement("img");
+            imgElement.src = blog.image;
+            imgElement.width = 300; // Set the width of the image
+            imgElement.height = 200; // Set the height of the image
+            // defining HTML classes for each element
+            titleElement.classList.add('blog-title');
+            dateElement.classList.add('blog-date');
+            descriptionElement.classList.add('blog-description');
+            imgElement.classList.add('blog-image');
             blogEntry.appendChild(titleElement);
             blogEntry.appendChild(dateElement);
             blogEntry.appendChild(descriptionElement);
+            blogEntry.appendChild(imgElement);
             blogContainer.appendChild(blogEntry);
         });
     }
